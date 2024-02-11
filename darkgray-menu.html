@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+        body{
+            background-color: rgb(213, 222, 222);
+        }
+        ul.main-menu{
+            list-style: none;
+            background-color: aliceblue;
+            box-shadow: 0 0 15px rgb(165, 164, 164);
+    
+        }
+
+        .main-menu>li{ 
+            display: inline-block;
+            padding: 15px 8px;
+        }
+
+        ul.main-menu ul{
+            list-style: none;
+            position: absolute;
+            display: none;
+            background-color: aliceblue;
+            box-shadow: 0 0 15px  rgb(165, 164, 164);
+            padding: 15px 8px;
+        }
+       
+        .main-menu li div{
+            height: 4px;
+            width: 0;
+            background-color: blueviolet;
+            transition: all 5s linear;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+        }
+
+        .main-menu a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            font-family: 'B nazanin';
+            font-weight: bold;
+        }
+      
+         ul.main-menu>li:hover ul{
+            display: block;
+        }
+        .main-menu ul a:hover{
+            color: rgb(151, 47, 151);
+            background-color: darkgray;
+         }
+         .main-menu a:hover{
+            color: blueviolet;
+         }
+        .main-menu li:hover div{
+            width: 100% 
+         }
+          
+        
+
+    </style>
+</head>
+<body>
+    <ul class="main-menu">
+        <li><a href="#">خانه</a><div></div></li>
+        <li><a href="#">محصولات</a><div></div>
+            <ul>
+                <li><a href="#">نرم افزاری</a></li>
+                <li><a href="#">سخت افزاری</a></li>
+                <li><a href="#">واردات</a></li>
+            </ul>
+            </li>
+        <li><a href="#">وبلاگ</a><div></div>
+            <ul>
+                <li><a href="#">دانش و تکنولوژی</a></li>
+                <li><a href="#">تولیدکنندگان</a></li>
+
+            </ul>
+        </li>
+        <li><a href="#">ارتباط با ما</a><div></div></li>
+        <li><a href="#">درباره ما</a><div></div></li>
+    </ul>
+    
+</body>
+</html>
